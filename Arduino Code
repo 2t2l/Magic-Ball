@@ -52,7 +52,19 @@ void setup()
 void loop()
 {
   {
-    timer = millis();
+    
+  // ACCELERATION
+
+  Vector normAccel = mpu.readNormalizeAccel();
+
+  Serial.print("Xacc ");
+  Serial.println(normAccel.XAxis);
+  Serial.print("Yacc ");
+  Serial.println(normAccel.YAxis);
+  Serial.print("Zacc ");
+  Serial.println(normAccel.ZAxis);
+
+  timer = millis();
 
   // Read normalized values
   Vector norm = mpu.readNormalizeGyro();
@@ -73,16 +85,6 @@ void loop()
   // Wait to full timeStep period
   delay((timeStep * 1000) - (millis() - timer));
 
-  // ACCELERATION
-
-  Vector normAccel = mpu.readNormalizeAccel();
-
-  Serial.print("Xacc ");
-  Serial.println(normAccel.XAxis);
-  Serial.print("Yacc ");
-  Serial.println(normAccel.YAxis);
-  Serial.print("Zacc ");
-  Serial.println(normAccel.ZAxis);
   }
 
   while (Serial.available()) {
