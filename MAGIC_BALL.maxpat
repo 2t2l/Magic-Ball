@@ -1144,20 +1144,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-57",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 618.22998, 242.0802, 151.0, 23.0 ],
-					"style" : "",
-					"text" : "udpsend 127.0.0.1 7400"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2363,7 +2349,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 476.72998, 450.0, 86.0, 22.0 ],
 					"style" : "",
-					"text" : "-2213.04"
+					"text" : "0."
 				}
 
 			}
@@ -2424,14 +2410,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-142",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 353.22998, 450.0, 40.874756, 35.0 ],
+					"patching_rect" : [ 353.22998, 450.0, 40.874756, 22.0 ],
 					"style" : "",
-					"text" : "322.04"
+					"text" : "0."
 				}
 
 			}
@@ -2512,7 +2497,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 157.72998, 450.0, 94.5, 22.0 ],
 					"style" : "",
-					"text" : "1686.22"
+					"text" : "0."
 				}
 
 			}
@@ -3895,7 +3880,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
+					"destination" : [ "obj-212", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -5172,8 +5157,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -5182,8 +5167,8 @@
 , 			{
 				"name" : "send",
 				"default" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"accentcolor" : [ 1.0, 1.0, 0.0, 1.0 ]
+					"accentcolor" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
